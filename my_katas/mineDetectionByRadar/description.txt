@@ -1,0 +1,28 @@
+
+Mine Detection By Radar
+
+You have the important Mission to detect mines in the path of your team soldiers, so They can cross in one piece through the enemy territory,
+How can You detect mines? as You walk very carefully with the detector, pay atention to anomalies on the soil:
+
+the data you receive:
+
+1. Vibrance (V): a number between 0 and 5, represents the noise of your detector
+2. Visual anomaly (A): a footprint you could identify as a potential mine, represented as a character "*" = 5 , "#" = 4, "X" = 3, "(" = 2, "O" = 1
+
+Not all the footprints will be mines, You will know if It's a mine if your detector gets a reading level 7, 
+that's determined by a combination of vibrance/footprint EX:
+
+V:2 + A:"#" 4 , Not a mine
+V:4 + A:"0" 1 , Not a mine
+V:5 + A:"#" 4 , It's a mine
+V:5 + A:"0" 1 , Not a mine
+
+You will receive an array of data:
+
+[[V,A],[V,A],[V,A]]
+
+and You will return an array containing the position in the array where a mine is located EX:
+
+[0,2,7, ... etc] .. etc
+
+Good Luck!
