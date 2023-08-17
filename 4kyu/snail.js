@@ -1,29 +1,6 @@
-function snail(list){
-    let pattern = [];
-
-    let startRow = 0;
-    let endRow = list[0].length - 1;
-    let startCol = 0;
-    let endCol = list[0].length - 1;
-    let numValues = list.slice();
-
-    while(startRow <= endRow && startCol <= endCol){
-        const topRow = numValues[startRow];
-        const bottomRow = numValues[endRow];
-        
-        for(let i = 0; i < topRow.length; i++){
-            pattern.push(topRow[i]);
-        }
-
-        
-
-        startRow++;
-        endRow--;
-        startCol++;
-        endCol--;
-    }
-
-    console.log(pattern);
+function snail(list = []){
+    const snailLength = list.map(sub => sub.length);
+    console.log(snailLength);
 }
 
 // snail([
