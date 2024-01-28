@@ -36,6 +36,10 @@ function presses(chars = "") {
     for(let x = 0; x < chars.length; x++){
         let char = chars[x].toUpperCase();
 
+        if(char === " "){
+            counter++;
+        }
+
         for(let key in keyPad){
             const keys = keyPad[key].split("");
             keys.push(key);
