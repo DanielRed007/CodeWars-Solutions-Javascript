@@ -1,0 +1,43 @@
+
+// 1. Basic Palindrome Check
+// Problem: Write a function isPalindrome(str) that checks if a given string is a palindrome. It should return true if the string is a palindrome, and false otherwise. Ignore case and non-alphanumeric characters.
+// Example: isPalindrome("A man, a plan, a canal, Panama") should return true.
+// 3. Count All Palindromic Substrings
+// Problem: Write a function countPalindromicSubstrings(str) that returns the count of all palindromic substrings in a given string.
+// Example: countPalindromicSubstrings("aaa") should return 6 because it contains the palindromic substrings: "a", "a", "a", "aa", "aa", "aaa".
+// 4. Check Palindrome Permutation
+// Problem: Write a function canFormPalindrome(str) to check if any permutation of the given string can form a palindrome.
+// Example: canFormPalindrome("carrace") should return true (since "racecar" is a palindrome), whereas canFormPalindrome("hello") should return false.
+// 5. Make a Palindrome by Adding Characters
+// Problem: Write a function makePalindrome(str) that determines the minimum number of characters that need to be added to the string to make it a palindrome.
+// Example: makePalindrome("race") should return 3 because by adding "car", it becomes "racecar".
+// 6. Palindrome Pairs
+// Problem: Given an array of strings, write a function findPalindromePairs(arr) to find all unique pairs of indices (i, j) such that the concatenation of arr[i] + arr[j] is a palindrome.
+// Example: findPalindromePairs(["bat", "tab", "cat"]) should return [[0, 1], [1, 0]].
+// 7. Palindrome Number (Without Converting to String)
+// Problem: Write a function isPalindromeNumber(num) that checks if a given number is a palindrome without converting it to a string.
+// Example: isPalindromeNumber(121) should return true, and isPalindromeNumber(-121) should return false.
+// 8. Nearest Palindromic Number
+// Problem: Write a function nearestPalindrome(num) that finds the nearest palindrome number to the given number.
+// Example: nearestPalindrome(123) should return 121.
+// 9. Remove to Make Palindrome
+// Problem: Write a function removeToMakePalindrome(str) that returns the minimum number of character deletions required to make a string a palindrome.
+// Example: removeToMakePalindrome("abca") should return 1 because removing "b" or "c" makes it a palindrome.
+// 10. Palindrome Partitioning
+// Problem: Write a function palindromePartitioning(str) that returns all possible ways to partition a string into substrings that are palindromes.
+// Example: palindromePartitioning("aab") should return [["a", "a", "b"], ["aa", "b"]].
+// 11. Find Palindrome Words in a Sentence
+// Problem: Write a function findPalindromeWords(sentence) that finds all palindromic words in a given sentence.
+// Example: findPalindromeWords("Wow, dad is a civic driver!") should return ["Wow", "dad", "civic"].
+// 12. Palindrome Pairs Concatenation in Array
+// Problem: Write a function findPalindromePairsWithConcatenation(arr) that returns all pairs of words in an array that can be concatenated to form a palindrome.
+// Example: findPalindromePairsWithConcatenation(["ab", "ba", "abc"]) should return ["abba", "baab"].
+// 13. Check if Linked List is a Palindrome
+// Problem: Given a linked list, write a function isPalindromeLinkedList(head) that checks if the linked list is a palindrome.
+// Example: For a linked list 1 -> 2 -> 2 -> 1, isPalindromeLinkedList(head) should return true.
+// 14. Binary Palindrome
+// Problem: Write a function isBinaryPalindrome(num) that checks if the binary representation of a number is a palindrome.
+// Example: isBinaryPalindrome(9) should return true because 9 in binary is 1001, which is a palindrome.
+// 15. Generate Palindromic Sequences
+// Problem: Write a function generatePalindromicSequences(n) that generates all palindromic sequences of length n.
+// Example: generatePalindromicSequences(2) should return ["aa", "bb", "cc", ...].
