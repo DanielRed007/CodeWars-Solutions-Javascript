@@ -124,3 +124,18 @@ const exampleTests = [["FFF", "F"], ["IIK", "K"], ["DFK", "I"]];
 console.log(trilingualDemocracy("FFF")); // F
 console.log(trilingualDemocracy("IIK")); // K
 console.log(trilingualDemocracy("DFK")); // I
+
+// ------------------------- GET ODD INDEX ----------------------- //
+
+function oddOne(list = []) {
+    for(let x = 0; x < list.length;x++){
+        if(list[x] % 2) return x;
+    }
+
+    return -1;
+}
+
+oddOne([2,4,6,7,10]); // 3);
+oddOne([2,16,98,10,13,78]); // 4);
+oddOne([4,-8,98,-12,-7,90,100]); // 4);
+oddOne([2,4,6,8]); // -1);
