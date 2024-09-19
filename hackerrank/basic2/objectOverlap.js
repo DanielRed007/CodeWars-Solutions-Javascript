@@ -41,3 +41,32 @@ boredom({ tim: 'accounts', jim: 'accounts',
     randy: 'pissing about', sandy: 'finance', andy: 'change',
     katie: 'IS', laura: 'IS', saajid: 'canteen', alex: 'pissing about',
     john: 'retail', mr: 'pissing about' }); // 'party time!!');
+
+
+function outed(meet, boss){
+    let score = 0;
+    let people = 0;
+
+    for(let x in meet){
+        people++;
+
+        if(x === boss){
+            const double = (meet[x] * 2);
+            score += double;
+        } else {
+            score += meet[x];
+        }
+    }
+
+    const overall = score / people;
+
+    if(overall <= 5){
+        return 'Get Out Now!';
+    } else {
+        return 'Nice Work Champ!';
+    }
+}
+
+outed({'tim':0, 'jim':2, 'randy':0, 'sandy':7, 'andy':0, 'katie':5, 'laura':1, 'saajid':2, 'alex':3, 'john':2, 'mr':0}, 'laura'); // 'Get Out Now!');
+outed({'tim':1, 'jim':3, 'randy':9, 'sandy':6, 'andy':7, 'katie':6, 'laura':9, 'saajid':9, 'alex':9, 'john':9, 'mr':8}, 'katie'); // 'Nice Work Champ!');
+outed({'tim':2, 'jim':4, 'randy':0, 'sandy':5, 'andy':8, 'katie':6, 'laura':2, 'saajid':2, 'alex':3, 'john':2, 'mr':8}, 'john'); // 'Get Out Now!');
